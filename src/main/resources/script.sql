@@ -150,3 +150,8 @@ JOIN slot_dias_semana ds ON sa.id = ds.slot_id
 JOIN slot_horarios h ON sa.id = h.slot_id
 WHERE 
     p.ativo = TRUE;
+
+alter table slots_agenda add column dias_semanas varchar(255) not null;
+alter table slots_agenda add column horarios varchar(255) not null;
+drop table slot_dias_semana;
+drop table slot_horarios;
