@@ -155,3 +155,5 @@ alter table slots_agenda add column dias_semanas varchar(255) not null;
 alter table slots_agenda add column horarios varchar(255) not null;
 drop table slot_dias_semana;
 drop table slot_horarios;
+alter table profissionais drop column genero;
+alter table profissionais drop column usuario;
